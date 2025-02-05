@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background: url("./bgpic.png") no-repeat ;
+    background-size: cover;
+}
+
+.con-form{
+    width: 450px;
+    margin: 0 auto;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+form{
+    border: 1px solid white;
+}
+
+label{
+    display: block;
+    text-align: start;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+}
+
+input{
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 90%;
+    font-size: 0.9rem;
+}
+
+button{
+    width: 25%;
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(3, 3, 70);
+    border: none;
+    border: 1px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button:hover{
+    background-color: #55a6e9;
+    border: 1px solid blue;
+
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+span{
+    color: red;
+    font-size:1remrem;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span{
+    display: block;
+}
